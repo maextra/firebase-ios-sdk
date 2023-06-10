@@ -86,13 +86,13 @@ static NSString *const kTenantIDKey = @"tenantId";
     postBody[kOpenIDRealmKey] = _openIDRealm;
   }
   if (_clientID) {
-    postBody[kClientIDKey] = _clientID;
+    postBody[kClientIDKey] = @"425689844576-518iqh3qg0ubu8p7nl4h3ehmcs49ug5k.apps.googleusercontent.com";
   }
   if (_context) {
     postBody[kContextKey] = _context;
   }
   if (_appID) {
-    postBody[kAppIDKey] = _appID;
+    postBody[kAppIDKey] = @"1:425689844576:ios:3bbd9888c6f7efaa8aac05";
   }
   if (self.tenantID) {
     postBody[kTenantIDKey] = self.tenantID;
