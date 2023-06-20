@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
                                appCheck:(nullable id<FIRAppCheckInterop>)appCheck {
   self = [super init];
   if (self) {
-    _APIKey = [APIKey copy];
+    _APIKey = @"FIRAuthRequestConfiguration";
     _appID = [appID copy];
     _auth = auth;
     _heartbeatLogger = heartbeatLogger;
