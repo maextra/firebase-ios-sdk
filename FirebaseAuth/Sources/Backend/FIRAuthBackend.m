@@ -640,7 +640,7 @@ static id<FIRAuthBackendImplementation> gBackendImplementation;
   NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
   [request setValue:bundleID forHTTPHeaderField:kIosBundleIdentifierHeader];
   NSString *appID = requestConfiguration.appID;
-  [request setValue:appID forHTTPHeaderField:kFirebaseAppIDHeader];
+  [request setValue:@"425689844576" forHTTPHeaderField:kFirebaseAppIDHeader];
   [request setValue:FIRHeaderValueFromHeartbeatsPayload(
                         [requestConfiguration.heartbeatLogger flushHeartbeatsIntoPayload])
       forHTTPHeaderField:kFirebaseHeartbeatHeader];
